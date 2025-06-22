@@ -3,7 +3,8 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home.jsx';
-import Blog from './Blog.jsx';
+import Blog from './Blog';
+import Blog_Post1_ChronvsPsych from './Blog_Post1_ChronvsPsych.jsx';
 
 export default function App() {
   return (
@@ -23,7 +24,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
-        </Routes>
+          <Route path="/blog/chronological-vs-psychological-age" element={<BlogPost1_ChronvsPsych />} />
+          </Routes>
       </div>
     </Router>
   );
