@@ -108,14 +108,19 @@ export default function Home() {
       {!quizOpen && (
         <>
         {/* Ads */}
-        <div className="flex flex-wrap justify-center items-center gap-4 p-4 bg-gray-50">
-            <div className="w-[728px] h-[90px] bg-orange-100 flex items-center justify-center border rounded">
-              728x90 Banner Ad Placeholder
-            </div>
-            <div className="w-[320px] h-[250px] bg-orange-100 flex items-center justify-center border rounded">
-              320x250 Ad Placeholder
-            </div>
-          </div>
+<div className="flex flex-wrap justify-center items-center gap-4 p-4 bg-gray-50">
+  {/* 728x90 Orange Rectangle (No text) */}
+  <div className="w-[728px] h-[90px] bg-[#ef6c00] border rounded" />
+
+  {/* 300x250 Image Banner */}
+  <div className="w-[300px] h-[250px] border rounded overflow-hidden">
+    <img
+      src="./assets/resized_brains_banner_300x250.png"
+      alt="Brain Banner"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
           {/* Hero Section */}
           <div className="text-center px-6 pt-10 pb-6">
             <h1 className="text-4xl font-bold text-gray-800">Mental Age Test: What Is My Mental Age?</h1>
@@ -321,10 +326,8 @@ export default function Home() {
 
           {/* Ad Side */}
           <div className="w-1/3 flex justify-center items-center p-6">
-            <div className="w-[300px] h-[600px] bg-orange-100 flex items-center justify-center border rounded">
-              300x600 Ad Placeholder
-            </div>
-          </div>
+  <div className="w-[300px] h-[600px] bg-[#4db6ac] border rounded" />
+</div>
         </div>
       )}
     </div>
