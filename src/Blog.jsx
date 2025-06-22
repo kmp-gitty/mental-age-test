@@ -8,7 +8,6 @@ const posts = [
     date: '5/25/25',
     description: 'When we think about age, the first thing that comes to mind is usually chronological age — the number of years we’ve lived...',
     image: brainImage,
-    path: '/blog/chron-vs-psych',
     link: '/blog/chronological-vs-psychological-age',
   },
   // You can add more posts later

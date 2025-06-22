@@ -4,7 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home.jsx';
 import Blog from './Blog';
-import Blog_Post1_ChronvsPsych from './Blog_Post1_ChronvsPsych.jsx';
+import BlogPost1_ChronvsPsych from './Blog_Post1_ChronvsPsych';
 
 export default function App() {
   return (
