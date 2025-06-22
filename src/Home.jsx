@@ -3,6 +3,8 @@ import youthfulImg from './assets/Youthful.png';
 import matureYouthfulImg from './assets/Mature-Youthful.png';
 import cynicMatureImg from './assets/Cynic-Mature.png';
 import cynicImg from './assets/Cynic.png';
+import brainBanner from './assets/resized_brains_banner_300x250.png';
+
 
 export default function Home() {
   const [quizOpen, setQuizOpen] = useState(false);
@@ -114,11 +116,11 @@ export default function Home() {
 
   {/* 300x250 Image Banner */}
   <div className="w-[300px] h-[250px] border rounded overflow-hidden">
-    <img
-      src="./assets/resized_brains_banner_300x250.png"
-      alt="Brain Banner"
-      className="w-full h-full object-cover"
-    />
+  <img
+  src={brainBanner}
+  alt="Brain Banner"
+  className="w-[300px] h-[250px] object-cover border rounded"
+/>
   </div>
 </div>
           {/* Hero Section */}
