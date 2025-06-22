@@ -139,9 +139,9 @@ export default function Home() {
             >
               Start Quiz
             </button>
-            <div className="w-[300px] h-[600px] bg-orange-100 flex items-center justify-center border rounded">
-              300x600 Ad Placeholder
-            </div>
+            <div className="w-[300px] h-[600px] bg-[#4db6ac] border rounded">
+  {/* Empty cyan block with no text */}
+</div>
           </div>
 
           {/* SEO Content Sections */}
