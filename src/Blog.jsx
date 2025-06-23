@@ -19,8 +19,12 @@ export default function Blog() {
       <h1 className="text-3xl font-bold mb-6">Latest in News</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post, idx) => (
-          <div key={idx} className="bg-white shadow rounded overflow-hidden">
-            <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
+          <div key={idx} className="bg-white shadow rounded overflow-hidden max-w-[320px] mx-auto">
+            <img
+  src={post.image}
+  alt={post.title}
+  className="w-[300px] h-[250px] object-cover mx-auto"
+/>
             <div className="p-4">
               <h2 className="text-xl font-bold">{post.title}</h2>
               <p className="text-gray-500 text-sm mb-2">{post.date}</p>
