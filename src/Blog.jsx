@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import brainImage from './assets/resized_brains_banner_300x250.png'; // replace with actual image
+import brainImage from './assets/resized_brains_banner_300x250.png';
 
-const posts = [
+// Simulated blog post list
+const allPosts = [
   {
     title: 'Chronological Age vs. Psychological Age',
     date: '5/25/25',
@@ -10,21 +11,37 @@ const posts = [
     image: brainImage,
     link: '/blog/chronological-vs-psychological-age',
   },
-  // You can add more posts later
+  // Add more posts here to simulate loading more content
 ];
 
 export default function Blog() {
+  const [visiblePosts, setVisiblePosts] = useState([]);
+  const [postCount, setPostCount] = useState(6); // load 6 at a time
+  const loader = useRef(null);
+
+  useEffect(() => {
+    setVisiblePosts(allPosts.slice(0, postCount));
+  }, [postCount]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        if (postCount < allPosts.length) {
+          setPostCount((prev) => Math.min(prev + 6, allPosts.length));
+        }
+      }
+    });
+    if (loader.current) observer.observe(loader.current);
+    return () => loader.current && observer.unobserve(loader.current);
+  }, [postCount]);
+
   return (
     <div className="p-6 max-w-7xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">Latest in News</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {posts.map((post, idx) => (
-          <div key={idx} className="bg-white shadow rounded overflow-hidden max-w-[320px] mx-auto">
-            <img
-  src={post.image}
-  alt={post.title}
-  className="w-[300px] h-[250px] object-cover mx-auto"
-/>
+        {visiblePosts.map((post, idx) => (
+          <div key={idx} className="bg-white shadow rounded overflow-hidden">
+            <img src={post.image} alt={post.title} className="w-full h-[250px] object-cover" />
             <div className="p-4">
               <h2 className="text-xl font-bold">{post.title}</h2>
               <p className="text-gray-500 text-sm mb-2">{post.date}</p>
@@ -34,7 +51,11 @@ export default function Blog() {
           </div>
         ))}
       </div>
+      {postCount < allPosts.length && (
+        <div ref={loader} className="text-center py-8 text-gray-500">Loading more posts...</div>
+      )}
     </div>
   );
 }
+
 
