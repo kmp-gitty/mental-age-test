@@ -11,7 +11,7 @@ export default function Blog_Post1_ChronvsPsych() {
       </p>
 
       <p className="mb-8">
-        This is where psychological age, often referred to as mental age, comes into play. Mental age assesses an individual's cognitive abilities, emotional intelligence, and maturity relative to others at a specific chronological age. In simple terms, it answers the question many of us wonder: <em>"What is my mental age?"</em>
+        This is where psychological age, often referred to as mental age, comes into play. Mental age assesses an individual's cognitive abilities, emotional intelligence, and maturity relative to others at a specific chronological age. In simple terms, it answers the question many of us wonder: <a href="https://mental-age-test-one.vercel.app/" className="text-blue-600 underline">What is my mental age?</a>
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">How Mental Age Differs from Chronological Age</h2>
@@ -42,7 +42,9 @@ export default function Blog_Post1_ChronvsPsych() {
       </p>
 
       <p className="mb-8">
-        Research into cognitive development, emotional intelligence, and lifespan psychology continues to highlight the importance of mental flexibility and self-awareness as we age. Developing these areas may not change your chronological age, but it can certainly impact your psychological resilience and life satisfaction.
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5442987/" className="text-blue-600 underline">
+          Research into cognitive development, emotional intelligence, and lifespan psychology
+        </a> continues to highlight the importance of mental flexibility and self-awareness as we age. Developing these areas may not change your chronological age, but it can certainly impact your psychological resilience and life satisfaction.
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">
@@ -55,13 +57,13 @@ export default function Blog_Post1_ChronvsPsych() {
 
       <ul className="list-disc list-inside mb-6">
         <li className="mb-2">
-          <strong>Discrepancy Between Chronological Age and Felt Age:</strong> A study published in the Journal of Aging and Health examined older adults and found that many individuals feel younger than their chronological age. This discrepancy was associated with better subjective health perceptions and psychological well-being across various age groups.
+          <strong>Discrepancy Between Chronological Age and Felt Age:</strong> A study published in <a href="https://journals.sagepub.com/doi/10.1177/09567976231164553" className="text-blue-600 underline">Journal of Aging and Health</a> examined older adults and found that many individuals feel younger than their chronological age. This discrepancy was associated with better subjective health perceptions and psychological well-being across various age groups.
         </li>
         <li className="mb-2">
-          <strong>Differences Between Chronological and Brain Age:</strong> Research in <em>NeuroImage</em> investigated how education and physical activity influence the difference between brain-predicted age and chronological age. The study found that higher education levels and increased physical activity were linked to a younger brain age.
+          <strong>Differences Between Chronological and Brain Age:</strong> Research in <a href="https://www.sciencedirect.com/science/article/pii/S1053811919308493" className="text-blue-600 underline">NeuroImage</a> investigated how education and physical activity influence the difference between brain-predicted age and chronological age. The study found that higher education levels and increased physical activity were linked to a younger brain age.
         </li>
         <li>
-          <strong>Understanding the Difference Between Biological Age and Chronological Age:</strong> An article from the <em>Mayo Clinic Press</em> highlighted that biological age, which reflects the condition of our cells and tissues, can differ from chronological age — impacted by genetics, lifestyle, and environment.
+          <strong>Understanding the Difference Between Biological Age and Chronological Age:</strong> An article from the <a href="https://mcpress.mayoclinic.org/healthy-aging/understanding-the-difference-between-biological-age-and-chronological-age/" className="text-blue-600 underline">Mayo Clinic Press</a> highlighted that biological age, which reflects the condition of our cells and tissues, can differ from chronological age — impacted by genetics, lifestyle, and environment.
         </li>
       </ul>
 
@@ -75,8 +77,12 @@ export default function Blog_Post1_ChronvsPsych() {
         Chronological age measures time, but psychological age reveals much more about our emotional and cognitive journey through life. Understanding both can help us better navigate relationships, careers, and personal growth.
       </p>
 
-      <p>
-        Age is more than just a number — it's a reflection of how we think, feel, and grow through each stage of life. Try out a Mental Age Test for yourself.
+      <p className="mb-6">
+        Age is more than just a number — it's a reflection of how we think, feel, and grow through each stage of life. <a href="https://mental-age-test-one.vercel.app/" className="text-blue-600 underline">Try out a Mental Age Test for yourself.</a>
+      </p>
+
+      <p className="text-sm text-gray-500 mt-8">
+        <a href="https://mental-age-test-one.vercel.app/blog" className="underline">Read more on our blog here</a>
       </p>
     </div>
   );
