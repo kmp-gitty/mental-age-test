@@ -277,9 +277,14 @@ export default function Home() {
               )
             ) : (
               <>
-                <div className="text-center text-xl text-gray-800 pt-[150px]">
-                  {quizData[currentQuestionIndex].question}
-                </div>
+                <div className="text-center pt-[150px]">
+  <p className="text-sm text-gray-600 mb-2">
+    Question {currentQuestionIndex + 1} of {quizData.length}
+  </p>
+  <p className="text-xl text-gray-800">
+    {quizData[currentQuestionIndex].question}
+  </p>
+</div>
                 <div className="flex flex-col gap-4 w-full">
                   <button
                     onClick={() => handleAnswer('A')}
