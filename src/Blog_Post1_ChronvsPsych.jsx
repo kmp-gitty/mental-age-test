@@ -11,7 +11,7 @@ export default function Blog_Post1_ChronvsPsych() {
       </p>
 
       <p className="mb-8">
-        This is where psychological age, often referred to as mental age, comes into play. Mental age assesses an individual's cognitive abilities, emotional intelligence, and maturity relative to others at a specific chronological age. In simple terms, it answers the question many of us wonder: <a href="https://mental-age-test-one.vercel.app/" className="text-blue-600 underline">What is my mental age?</a>
+        This is where psychological age, often referred to as mental age, comes into play. Mental age assesses an individual's cognitive abilities, emotional intelligence, and maturity relative to others at a specific chronological age. In simple terms, it answers the question many of us wonder: <a href="https://mental-agetest.com/" className="text-blue-600 underline">What is my mental age?</a>
       </p>
 
       <h2 className="text-2xl font-semibold mt-10 mb-4">How Mental Age Differs from Chronological Age</h2>
@@ -78,11 +78,11 @@ export default function Blog_Post1_ChronvsPsych() {
       </p>
 
       <p className="mb-6">
-        Age is more than just a number — it's a reflection of how we think, feel, and grow through each stage of life. <a href="https://mental-age-test-one.vercel.app/" className="text-blue-600 underline">Try out a Mental Age Test for yourself.</a>
+        Age is more than just a number — it's a reflection of how we think, feel, and grow through each stage of life. <a href="https://mental-agetest.com/" className="text-blue-600 underline">Try out a Mental Age Test for yourself.</a>
       </p>
 
       <p className="text-sm text-gray-500 mt-8">
-        <a href="https://mental-age-test-one.vercel.app/blog" className="underline">Read more on our blog here</a>
+        <a href="https://mental-agetest.com/blog" className="underline">Read more on our blog here</a>
       </p>
     </div>
   );
