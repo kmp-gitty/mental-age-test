@@ -5,19 +5,19 @@ import brainImage from './assets/resized_brains_banner_300x250.png';
 // Simulated blog post list
 const allPosts = [
   {
-    title: 'Chronological Age vs. Psychological Age',
-    date: '5/25/25',
-    description: 'When we think about age, the first thing that comes to mind is usually chronological age — the number of years we’ve lived...',
-    image: brainImage,
-    link: '/blog/chronological-vs-psychological-age',
-  },
-
-  {
     title: 'The Science Behind Personality',
     date: '7/10/25',
     description: 'What is personality? How does personality relate to my mental age? What does the science say...',
     image: brainImage,
     link: '/blog/science-behind-personality',
+  },
+  
+  {
+    title: 'Chronological Age vs. Psychological Age',
+    date: '5/25/25',
+    description: 'When we think about age, the first thing that comes to mind is usually chronological age — the number of years we’ve lived...',
+    image: brainImage,
+    link: '/blog/chronological-vs-psychological-age',
   },
   // Add more posts here to simulate loading more content
 ];

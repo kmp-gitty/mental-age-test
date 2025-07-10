@@ -30,7 +30,7 @@ export default function Blog_Post2_SciPersonality() {
       <h2 className="text-2xl font-semibold mt-10 mb-4">Can Personality Change?</h2>
 
       <p className="mb-4">
-        "<a
+        <a
           href="https://www.apa.org/monitor/julaug03/personality"
           className="text-blue-600 underline"
           target="_blank"
