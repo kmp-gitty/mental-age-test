@@ -11,6 +11,14 @@ const allPosts = [
     image: brainImage,
     link: '/blog/chronological-vs-psychological-age',
   },
+
+  {
+    title: 'The Science Behind Personality',
+    date: '7/10/25',
+    description: 'What is personality? How does personality relate to my mental age? What does the science say...',
+    image: brainImage,
+    link: '/blog/science-behind-personality',
+  },
   // Add more posts here to simulate loading more content
 ];
 

@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home.jsx';
 import Blog from './Blog';
 import BlogPost1_ChronvsPsych from './Blog_Post1_ChronvsPsych';
+import BlogPost2_SciPersonality from './Blog_Post2_SciPersonality';
+
 
 export default function App() {
   return (
@@ -25,6 +27,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/chronological-vs-psychological-age" element={<BlogPost1_ChronvsPsych />} />
+          <Route path="/blog/science-behind-personality" element={<BlogPost2_SciPersonality />} />
           </Routes>
       </div>
     </Router>
