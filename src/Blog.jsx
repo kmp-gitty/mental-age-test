@@ -5,6 +5,13 @@ import brainImage from './assets/resized_brains_banner_300x250.png';
 // Simulated blog post list
 const allPosts = [
   {
+    title: 'How Does the Mental Age Test Work?',
+    date: '7/13/25',
+    description: 'Our Mental Age Test takes you through a series of 17 binary choice questions...',
+    image: brainImage,
+    link: '/blog/how-does-the-mental-age-test-work',
+  },
+  {
     title: 'The Science Behind Personality',
     date: '7/10/25',
     description: 'What is personality? How does personality relate to my mental age? What does the science say...',

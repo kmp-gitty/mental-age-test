@@ -6,6 +6,7 @@ import Home from './Home.jsx';
 import Blog from './Blog';
 import BlogPost1_ChronvsPsych from './Blog_Post1_ChronvsPsych';
 import BlogPost2_SciPersonality from './Blog_Post2_SciPersonality';
+import BlogPost3_HowTestWork from './Blog_Post3_HowTestWork';
 
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/chronological-vs-psychological-age" element={<BlogPost1_ChronvsPsych />} />
           <Route path="/blog/science-behind-personality" element={<BlogPost2_SciPersonality />} />
+          <Route path="/blog/how-does-the-mental-age-test-work" element={<BlogPost3_HowTestWork />} />
           </Routes>
       </div>
     </Router>
