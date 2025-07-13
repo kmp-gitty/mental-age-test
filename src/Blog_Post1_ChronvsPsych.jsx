@@ -1,4 +1,8 @@
 import React from 'react';
+import { useEffect } from 'react';
+useEffect(() => {
+  document.title = "Mental Age Test: Chronological vs Psychological Age";
+}, []);
 
 export default function Blog_Post1_ChronvsPsych() {
   return (
