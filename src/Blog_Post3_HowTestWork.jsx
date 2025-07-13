@@ -50,7 +50,7 @@ export default function Blog_Post2_SciPersonality() {
       </p>
 
       <p className="mb-8">
-      Thinking Strategy:
+      Thinking Strategy: 
       <a
           href="https://mental-agetest.com/blog/science-behind-personality"
           className="text-blue-600 underline"
@@ -81,8 +81,8 @@ export default function Blog_Post2_SciPersonality() {
       <p className="mb-6">
       Overall it's an attempt to provide insight into how your cognitive and emotional maturity compares to your chronological age.<br /><br />
 
-      Ready to find you? 
-        <a href="https://mental-agetest.com/" className="text-blue-600 underline">Try out our Mental Age Test for yourself.</a>
+      Ready to find out? 
+        <a href="https://mental-agetest.com/" className="text-blue-600 underline"> Try out our Mental Age Test for yourself.</a>
       </p>
 
       <p className="text-sm text-gray-500 mt-8">
